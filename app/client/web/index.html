@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html ng-app="assignment010App">
+<meta content="width=device-width, initial-scale=1" name="viewport">
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+    <script src='components/planets/planetsController.js'></script>
+    <link href="http://www.w3schools.com/lib/w3.css" rel="stylesheet">
+    <title>wksp-20170102/Assignment010</title>
+</head>
+<body>
+  <div class="w3-container" ng-controller="planetsCtrl">
+    <ul class="w3-ul w3-card-4" ng-repeat="planet in data">
+      <li class="w3-padding-16">
+        <img class="w3-left w3-circle" height="64" src="{{planet.image}}" width="64">
+        <span class="w3-xlarge">{{planet.name}}</span><br>
+        <span>Circumference: {{planet.circumference}};</span>
+        <span>Orbit: {{planet.orbit}};</span>
+        <span>Velocity: {{planet.velocity}}</span>
+      </li>
+    </ul>
+  </div>
+</body>
+</html>
