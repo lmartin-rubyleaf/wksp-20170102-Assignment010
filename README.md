@@ -13,4 +13,4 @@ FROM [codenvy/node](https://hub.docker.com/r/codenvy/node/)
 
 | #       | Description           | Command  |
 | :------------- |:-------------| :-----|
-| 1      | Run | `cd ${current.project.path}/app && node app.js` |
+| 1      | Run | `cd ${current.project.path}/app && node app/server/app.module.js` |
